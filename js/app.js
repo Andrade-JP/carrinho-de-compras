@@ -1,7 +1,16 @@
+const recebeSentenca = function(){
+    let frase = 'Olá! ; Seja bem-vindo ao desafio do Carrinho de compras da Alura'
+    let parteUm = frase.split(';')[0];
+    let parteDois = frase.split(';')[1];
+    alert(parteUm);
+    alert(parteDois)
+
+}
+recebeSentenca();
+
 let valorTotal = 0;
 let contador = 0;
 limpaCampos();
-
 
 
 
@@ -45,6 +54,8 @@ function limpaCampos(){
 }
 
     function limpar() {
+    contador = 0;
+    valorTotal= 0
     limpaCampos();
     alteraTitulo ('Carrinho de compras');
 }
@@ -56,3 +67,5 @@ function alteraTitulo (frase){
 titulo.innerHTML = frase;
 
 }
+
+
